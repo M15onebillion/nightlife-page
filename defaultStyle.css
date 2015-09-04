@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+}
+
+.row:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*="col-"]{
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+
+.col-1 {width: 12.5%;}
+.col-2 {width: 25%;}
+.col-3 {width: 37.5%;}
+.col-4 {width: 50%;}
+.col-5 {width: 62.5%;}
+.col-6 {width: 75%;}
+.col-7 {width: 87.5%;}
+.col-8 {width: 100%;}
+
+body{
+	background-color: rgb(250,250,250);
+	margin: 0px 0px 0px 0px;
+}
+
+#topBarContainer{
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	left:0px;
+	height: 87px;
+	width: 100vw;
+	background-color: white;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+#topBarWrapper{
+	position: absolute;
+	height: 86px;
+	width: 90%;
+	left: 10%;
+
+}
+
+#logoWrapper{
+	float: left;
+	position: relative;
+	height: 85px;
+	width: 150px;
+
+}
+
+#tabWrapper{
+	height: 100%;
+	width: 80%;
+	float: left;
+
+}
+.tabs{
+	position: relative;
+	width: 81px;
+	height: 100%;
+	float: left;
+}
+.inbet{
+	position: relative;
+	width: 10px;
+	height: 100%;
+	float: left;
+}
+#inbetText{
+	padding-right: 10px;	
+	position: absolute;
+	bottom: 0px;
+}
+
+#tabText{
+	text-align: center;
+	left: 10px;
+	position: absolute;
+	bottom: 0px;
+}
+
+#AboutTab{
+	left: 4px;
+}
+
+#TheTeamTab{
+	right: 7px;
+}
+
+.tab-links{
+	position: absolute;
+	bottom: 7px;
+	margin: 0px;
+}
+.tab-links:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.tab-links li{
+	margin: 0px 4px;
+	float: left;
+	list-style: none;
+}
+
+.tab-links a{
+	padding: 9px 25px;
+	border-radius: 5px 5px 0px 0px;
+	background: white;
+	color: rgb(240,240,240);
+	background-color: black;
+	text-decoration: none;
+	
+}
+
+#activeTab a{
+	padding: 25px 25px 9px 25px;
+}
+
+.tab {
+	-webkit-transition-property: padding;
+	-webkit-transition-duration: .25s;
+	transition-property: padding;
+	transition-duration: .25s;
+}
+
+.tab:hover {
+	padding: 25px 25px 9px 25px;
+}
+
+#bodyContainer {
+	position: relative;
+	height: 100px;
+	width: 200px;
+}
+
+#slideContainer {
+	position: absolute;
+	height: 100%%;
+	width: 100%;
+}
+
+
+
+
+
+
